@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+// Represents a cat with age, weight, and name
 class Cat {
 public:
     Cat(int age = 0, double weight = 0.0, string name = "Unknown");

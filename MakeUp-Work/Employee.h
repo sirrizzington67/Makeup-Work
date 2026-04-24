@@ -5,6 +5,7 @@
 #include <iomanip>
 using namespace std;
 
+// Represents a company employee with age, years of service, and salary
 class Employee {
 public:
     Employee();

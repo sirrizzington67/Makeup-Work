@@ -6,6 +6,7 @@ Square::Square(int s) : side(0) {
     setSide(s);
 }
 
+// Side must be >= 0
 void Square::setSide(int s) {
     if (s >= 0)
         side = s;

@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+// Represents a TV with a tunable station number (1-999)
 class TV {
 public:
     TV();
@@ -19,30 +20,5 @@ public:
 private:
     int itsStation;
 };
-
-TV::TV() : itsStation(1) {}
-
-TV::TV(int station) : itsStation(1) {
-    SetStation(station);
-}
-
-void TV::SetStation(int station) {
-    if (station >= 1 && station <= 999)
-        itsStation = station;
-    else
-        cout << "Invalid station. Must be between 1 and 999.\n";
-}
-
-void TV::displayStatus() const {
-    cout << "TV is on station " << itsStation << "\n";
-}
-
-void TV::channelUp() {
-    if (itsStation < 999) itsStation++;
-}
-
-void TV::channelDown() {
-    if (itsStation > 1) itsStation--;
-}
 
 #endif

@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    // Exercise 3: Create two employees using setters
     Employee emp1;
     emp1.setAge(30);
     emp1.setYearsOfService(5);
@@ -16,12 +17,14 @@ int main() {
     emp1.display(1);
     emp2.display(2);
 
+    // Exercise 4: Test salary rounding to nearest thousand
     cout << "\n";
     Employee t1, t2, t3;
     t1.setSalary(75000.0); cout << t1.getSalaryInThousands() << "\n";
     t2.setSalary(75499.0); cout << t2.getSalaryInThousands() << "\n";
     t3.setSalary(75500.0); cout << t3.getSalaryInThousands() << "\n";
 
+    // Exercise 5: Parameterized constructor
     cout << "\n\n";
     Employee emp3(30, 5, 75000.0);
     emp3.display(3);

@@ -1,6 +1,7 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
+// Represents a square shape with a single side length
 class Square {
 public:
     Square(int side = 0);

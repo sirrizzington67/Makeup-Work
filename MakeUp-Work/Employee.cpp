@@ -3,10 +3,12 @@
 #include <iomanip>
 using namespace std;
 
+// Default constructor: initializes all members to 0
 Employee::Employee()
     : itsAge(0), itsYearsOfService(0), itsSalary(0.0)
 {}
 
+// Parameterized constructor: validates input through setters
 Employee::Employee(int age, int yearsOfService, double salary)
     : itsAge(0), itsYearsOfService(0), itsSalary(0.0)
 {
@@ -36,6 +38,7 @@ void Employee::setSalary(double salary) {
         cout << "Invalid salary. Must be >= 0.\n";
 }
 
+// Rounds salary to nearest $1,000 using (salary + 500) / 1000
 int Employee::getSalaryInThousands() const {
     return static_cast<int>((itsSalary + 500.0) / 1000.0);
 }
